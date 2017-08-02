@@ -1,4 +1,4 @@
-package com.mrwang.freepager;
+package com.mrwang.pager;
 
 import android.content.Context;
 import android.graphics.Canvas;
