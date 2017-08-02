@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 
 /**
+ * 测试的 view 看看 View 的生命周期都在哪个线程
  * User: chengwangyong(chengwangyong@blinnnk.com)
  * Date: 2017/7/21
  * Time: 下午7:03

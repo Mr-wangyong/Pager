@@ -3,24 +3,20 @@ package com.mrwang.pager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.mrwang.freepager.GifSurface;
-import com.mrwang.freepager.page.FreePage;
+import com.mrwang.freepager.page.FreePageContainer;
 
 public class ThreadActivity extends AppCompatActivity {
 
-  private GifSurface gifSurface;
-  private ViewAnim anim;
-  private FreePage freePage;
+  private FreePageContainer freePage;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_thread);
 
-    freePage = (FreePage) findViewById(R.id.free_page);
+    freePage = (FreePageContainer) findViewById(R.id.free_page);
 
-    freePage.start();
-    MyPage myPage=new MyPage(getApplicationContext());
+    MyPage myPage = new MyPage(getApplicationContext());
     freePage.addPage(myPage);
   }
 

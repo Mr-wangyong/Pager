@@ -5,8 +5,6 @@ import android.os.HandlerThread;
 import android.os.Message;
 import android.os.Process;
 
-import static android.R.id.message;
-
 /**
  * User: chengwangyong(chengwangyong@blinnnk.com)
  * Date: 2017/7/21
@@ -29,12 +27,6 @@ public class SurfaceHandler extends HandlerThread {
     };
   }
 
-  @Override
-  protected void onLooperPrepared() {
-    if (onLoopPrepared != null) {
-      onLoopPrepared.OnThreadLooperPrepared(null);
-    }
-  }
 
   public void post(Runnable run) {
     this.workHandler.post(run);
